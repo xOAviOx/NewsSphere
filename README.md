@@ -11,4 +11,4 @@ NewsSphere is a simple and elegant web application that allows users to search f
 - **Elegant UI**: A clean and modern design with smooth animations and loading indicators.
 
 ## Use Case
-[watch the video](https://github.com/username/repository/blob/main/video.mp4)
+[watch the video]([https://github.com/username/repository/blob/main/video.mp4](https://github.com/xOAviOx/NewsSphere/blob/main/Screen%20Recording%202025-01-22%20232142.mp4))

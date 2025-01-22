@@ -13,9 +13,19 @@
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
   </head>
   <body>
-    <input type="text" id="search" />
-    <input type="text" id="datepickerFrom" />
-    <input type="text" id="datepickerTo" />
-    <button class="btn">Submit</button>
+    <section>
+      <nav class="center-nav">
+        <img src="logo.png" alt="" />
+        <input type="text" id="search" placeholder="Search News" />
+        <input
+          type="text"
+          id="datepickerFrom"
+          placeholder="From Date"
+          data-input
+        />
+        <input type="text" id="datepickerTo" placeholder="To Date" data-input />
+        <button class="btn">Submit</button>
+      </nav>
+    </section>
   </body>
 </html>

@@ -1,6 +1,8 @@
 import { API_KEY } from "./api.js";
 const button = document.querySelector(".btn");
 const input = document.getElementById("search");
+const card = document.querySelector(".card");
+
 const from = flatpickr("#datepickerFrom", {
   dateFormat: "Y-m-d", // Format like 2025-01-01
 });

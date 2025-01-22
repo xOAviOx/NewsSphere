@@ -154,6 +154,51 @@ body {
   color: #0056b3;
   border-bottom: 2px solid #0056b3;
 }
+/* Headline Styling */
+.headline {
+  text-align: center;
+  margin-top: 50px;
+  color: #333;
+  font-family: "Arial", sans-serif;
+  padding: 20px;
+  background: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.headline h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.headline p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Animation for smooth fade-in */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* Loader Styles */
 .loader {
   position: fixed;

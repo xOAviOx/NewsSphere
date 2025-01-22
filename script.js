@@ -2,6 +2,7 @@ import { API_KEY } from "./api.js";
 const button = document.querySelector(".btn");
 const input = document.getElementById("search");
 const card = document.querySelector(".card");
+const container = document.querySelector(".container");
 
 const from = flatpickr("#datepickerFrom", {
   dateFormat: "Y-m-d", // Format like 2025-01-01
@@ -26,4 +27,33 @@ const getData = async function (query, fromdate, todate) {
   const data = await resp.json();
   console.log(data);
   console.log(data.articles);
+  generateMarkup(data);
+};
+
+const generateMarkup = function (data) {
+  container.innerHTML = "";
+
+  data.articles.forEach((news) => {
+    const newNews = {
+      image: news.urlToImage,
+      title: news.title,
+      description: news.description,
+      url: news.url,
+      source: news.source.name,
+    };
+    const html = `
+    <div class="card">
+            <img src=${newNews.image} alt="News" />
+            <div class="card-content">
+              <h3>${newNews.title}</h3>
+              <p>
+                ${newNews.description}
+              </p>
+               <p class="source">Source: ${newNews.source}</p>
+              <a href=${newNews.url}>Read More</a>
+            </div>
+          </div>
+    `;
+    container.insertAdjacentHTML("beforeend", html);
+  });
 };

@@ -1,4 +1,4 @@
-###Note: The API I used in this project is not free on production so I cant put the live link but if you wanna try it out yourself you can clone the repo go to NewsAPI.org to get your own API Key and make it work on your system.
+### Note: The API I used in this project is not free on production so I cant put the live link but if you wanna try it out yourself you can clone the repo go to NewsAPI.org to get your own API Key and make it work on your system.
 
 # NewsSphere
 
